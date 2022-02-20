@@ -5,7 +5,8 @@
 [Running the Server] Once the project.c file is finished compiling,
 - Each process receives a small number of command-line arguments, providing its station's name, its unique port for TCP/IP-based communication with a web-browser, its unique port for UDP/IP-based communication with other stations using datagrams, the UDP/IP-based port(s) of directly connected (neighbour) stations. 
 
-shell>  ./station Warwick-Stn 2401 2408 2560 2566 .... &
+shell>  ./station Warwick-Stn 2401 2408 2560 2566 .... &  
+
 shell>  ./station.py Greenwood-Stn 2402 2560 2567 2408 .... &
 
 which indicates that the first process (a compiled C program) will manage the data of the station named "Warwick-Stn", will receive queries from web-browsers using TCP/IP port 2401, will receive datagrams from other stations using UDP/IP port 2408, and that "Warwick-Stn" is 'physically adjacent' to 2 other stations that are receiving station-to-station datagrams on UDP/IP ports 2560 and 2566.
