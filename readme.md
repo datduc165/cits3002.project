@@ -1,4 +1,4 @@
-#CITS project
+#CITS3002 project
 - The goal of this project is to develop a server application to manage the data and permit queries about bus and train routes, such as those in the Transperth transport network. By successfully completing the project, you will have a greater understanding of the standard TCP and UDP protocols running over IP, communication between web-browsers and application programs using HTTP and HTML, and will have developed a simple text-based protocol to make and reply to queries for distributed information.
 - no station server should ever contain all knowledge about the whole network, timetabling data, or network connections. Each station's timetabling data, recorded in one textfile for each station, may change at any time (for example, if a bus breaks down, its next trip will be cancelled). Every query arriving at a station server (via a UDP/IP datagram) should be answered using the current up-to-date timetable information for that station.
 - It should be tested on a linux environment Compiling should be done either by using make or with the command below cc -std=c99 project.c -o project
